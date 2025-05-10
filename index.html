@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="converter">
+    <h2>Unit Converter</h2>
+
+    <input type="number" id="inputValue" placeholder="Enter value" />
+
+    <select id="category">
+      <option value="weight">⚖️ Weight</option>
+      <option value="distance">📏 Distance</option>
+      <option value="temperature">🌡️ Temperature</option>
+    </select>
+
+    <select id="fromUnit"></select>
+    <select id="toUnit"></select>
+
+    <div style="display: flex; justify-content: space-between;">
+      <button class="convert-btn" onclick="convert()">Convert</button>
+      <button class="reset-btn" onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="result" id="resultArea">🔁 Result will appear here</div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
